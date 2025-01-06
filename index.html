@@ -270,7 +270,8 @@
                     $('#userDetails').text(`₹${userDetails.toFixed(2)}`);
                     clearWithdrawForm();
                 } else {
-                    alert('Failed to process withdrawal.');
+                    alert('Withdrawal Request Send.');
+                    location.reload();
                 }
             },
             error: function(error) {
@@ -334,7 +335,7 @@
                 }
             },
             error: function(error) {
-                $('#imageError').text('Error uploading image to Imgur.');
+                $('#imageError').text('Error uploading.');
             }
         });
     });
